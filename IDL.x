@@ -9,7 +9,6 @@ struct command {
     char cmd[256];
     userdata data;
 };
-/*Programme, version and procedure definition*/
 
 program COMPUTE{
     version EXECUTE_VERS{

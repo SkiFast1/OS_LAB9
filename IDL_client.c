@@ -20,7 +20,7 @@ char* compute_1(char *host, char login[], char password[], char cmd[], int auth_
 		clnt_pcreateerror (host);
 		exit (1);
 	}
-#endif	/* DEBUG */
+#endif	
 	strcpy(auth_1_arg.login,login);
 	strcpy(auth_1_arg.password, password);
 	if (!auth_chk){
@@ -44,7 +44,7 @@ char* compute_1(char *host, char login[], char password[], char cmd[], int auth_
 	}
 #ifndef	DEBUG
 	clnt_destroy (clnt);
-#endif	 /* DEBUG */
+#endif	 
 }
 
 
